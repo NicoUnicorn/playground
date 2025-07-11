@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Deliberation: Working Together More Efficiently | Change.org</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4285f4, #1a73e8);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            background: white;
+            margin: 40px 0;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #e53e3e;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #e53e3e;
+            padding-bottom: 10px;
+        }
+        
+        .section h3 {
+            color: #333;
+            font-size: 1.3rem;
+            margin: 25px 0 15px 0;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .step {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #e53e3e;
+        }
+        
+        .step-number {
+            background: #e53e3e;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .examples {
+            background: #e8f4fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .example {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 3px solid #007bff;
+        }
+        
+        .prompt-category {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .prompt-category h4 {
+            color: #e53e3e;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .prompt-list {
+            list-style: none;
+        }
+        
+        .prompt-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .prompt-list li:before {
+            content: "•";
+            color: #e53e3e;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .scope-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .in-scope {
+            background: #d4edda;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #28a745;
+        }
+        
+        .out-scope {
+            background: #f8d7da;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #dc3545;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #4285f4, #1a73e8);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+        
+        .cta-button {
+            background: white;
+            color: #e53e3e;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .process-steps,
+            .scope-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section {
+                padding: 25px;
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Let's Work Better Together</h1>
+            <p>Internal Deliberation Process: Sharpening How We Communicate, Meet, and Gather</p>
+        </div>
+    </header>
+
+        <section class="section">
+            <h2>Why Are We Doing This?</h2>
+            <p>At Change.org, we believe in practicing what we preach. Before we can help others run effective deliberation processes, we need to master them ourselves.</p>
+            
+            <div style="background: #e8f4fd; padding: 25px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #4285f4;">
+                <h3 style="color: #007bff; margin-bottom: 15px;">🔄 Dog-Fooding Our Own Process</h3>
+                <p>We're testing deliberation tools and methodologies internally first, using existing third-party platforms to understand what works, what doesn't, and how we can improve. This hands-on experience will make us better at supporting the communities we serve.</p>
+            </div>
+            
+            <div style="background: #e3f2fd; padding: 25px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #ffc107;">
+                <h3 style="color: #1565c0; margin-bottom: 15px;">🎯 Real Stakes, Real Impact</h3>
+                <p>We chose a topic that genuinely matters to all of us—how we work together as a company. This isn't just a test run; your contributions will directly inform decisions that affect our daily work lives.</p>
+            </div>
+            
+            <div style="background: #e8f5e8; padding: 25px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #17a2b8;">
+                <h3 style="color: #2e7d32; margin-bottom: 15px;">📋 Leadership Commitment</h3>
+                <p>The C-team will review all outputs from this process and use them as valuable input for company-wide decisions. Your voice will be heard at the highest levels of the organization.</p>
+            </div>
+        </section>
+
+    <main class="container">
+        <section class="section">
+            <h2>How This Works</h2>
+            <p>We're launching a two-week collaborative process to improve how we work together as one company. Your voice matters, and we want to hear from everyone.</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Week 1: Ideation</h3>
+                    <p><strong>Everyone participates</strong> for 10-20 minutes to contribute ideas and vote on others' suggestions. Share your experiences and creative solutions.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Week 2: Deliberation</h3>
+                    <p><strong>Selected participants</strong> will join a deeper, live conversation to refine the most promising proposals into actionable solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>The Challenge We're Solving</h2>
+            <p><strong>Problem Framing Question:</strong></p>
+            <p style="font-size: 1.1rem; font-style: italic; margin: 15px 0; color: #e53e3e;">How can we work together more efficiently as one company by sharpening the way we communicate, meet, and gather in person?</p>
+            
+            <h3>Fictional Examples from Our Team</h3>
+            <div class="examples">
+                <div class="example">
+                    <strong>Team/Department Lead:</strong> "I want to limit the number of weeks where squad members are out (designer one week, PM the next, engineer after), making it hard to maintain momentum and alignment."
+                </div>
+                <div class="example">
+                    <strong>Senior Leadership:</strong> "I want comms channels that surface critical blockers fast yet keep deep-work hours free, so that I can make strategic decisions without drowning in notifications."
+                </div>
+                <div class="example">
+                    <strong>New Employee:</strong> "I want crystal-clear rules on where information lives and how fast to respond, so that I can onboard confidently without pinging people for 'where do I find X?'"
+                </div>
+                <div class="example">
+                    <strong>Cross-functional Project Lead:</strong> "I want core working hours reserved on everyone's calendar, so that scheduling live calls doesn't take a week of back-and-forth and late-night compromises."
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>What the Experts Say About This</h2>
+            <p>Leading workplace efficiency researchers and organizational psychologists have identified key patterns in high-performing companies:</p>
+            
+            <div class="prompt-category">
+                <h4>📚 Documentation Best Practices</h4>
+                <ul class="prompt-list">
+                    <li><strong>MIT's Workplace Studies:</strong> Teams with centralized documentation systems are 40% more efficient at onboarding and 25% faster at project handoffs.</li>
+                    <li><strong>Stanford Research:</strong> "Single source of truth" systems reduce information-seeking time by an average of 2.3 hours per employee per week.</li>
+                </ul>
+            </div>
+
+            <div class="prompt-category">
+                <h4>🤝 Meeting Science</h4>
+                <ul class="prompt-list">
+                    <li><strong>Harvard Business Review:</strong> Companies with strict agenda requirements see 67% more actionable outcomes from meetings.</li>
+                    <li><strong>Microsoft's Work Trend Index:</strong> "No-meeting" blocks of 4+ hours correlate with 23% higher reported job satisfaction and productivity.</li>
+                </ul>
+            </div>
+
+            <div class="prompt-category">
+                <h4>💬 Communication Patterns</h4>
+                <ul class="prompt-list">
+                    <li><strong>UC Berkeley Study:</strong> Clear async communication protocols reduce "urgent" interruptions by 45% while maintaining response quality.</li>
+                    <li><strong>Slack's Future of Work Institute:</strong> Teams using structured communication channels (threads, scheduled sends) report 30% less communication fatigue.</li>
+                    <li><strong>Georgetown's Cal Newport:</strong> "Communication protocols aren't restrictions—they're the foundation that enables deep work to flourish."</li>
+                </ul>
+            </div>
+
+            <div class="prompt-category">
+                <h4>⚡ Focus & Velocity Research</h4>
+                <ul class="prompt-list">
+                    <li><strong>Deep Work Institute:</strong> Employees need an average of 23 minutes to refocus after an interruption—making protected time blocks essential.</li>
+                    <li><strong>Basecamp's Research:</strong> Companies with consolidated time-off periods (vs. scattered days) see 35% better post-break productivity and team cohesion.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>What's In Scope vs. Out of Scope</h2>
+            
+            <div class="scope-grid">
+                <div class="in-scope">
+                    <h3 style="color: #28a745; margin-bottom: 15px;">✅ In Scope</h3>
+                    <ul class="prompt-list">
+                        <li>Company-wide rules for Slack vs. Email usage</li>
+                        <li>Documentation standards and source of truth</li>
+                        <li>No-Meeting days and meeting guidelines</li>
+                        <li>Summer shutdown vs. scattered Recharge Days</li>
+                        <li>Agenda requirements for meetings</li>
+                        <li>In-person gathering guidelines</li>
+                        <li>Company rituals and practices</li>
+                    </ul>
+                </div>
+                
+                <div class="out-scope">
+                    <h3 style="color: #dc3545; margin-bottom: 15px;">❌ Out of Scope</h3>
+                    <ul class="prompt-list">
+                        <li>Org-chart changes or team mergers</li>
+                        <li>Leadership structure adjustments</li>
+                        <li>Tooling replacements (Slack, Gmail, etc.)</li>
+                        <li>Team ownership or autonomy shifts</li>
+                        <li>Compensation or performance policies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2 style="margin-bottom: 20px;">Ready to Shape Our Future?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 10px;">Your insights will directly influence how we work together.</p>
+            <p style="opacity: 0.9;">Join Week 1 ideation starting Monday - it only takes 10-20 minutes.</p>
+            <a href="#participate" class="cta-button">Participate Now</a>
+        </section>
+
+        <section class="section" style="background: #f8f9fa; border-left: 5px solid #e53e3e;">
+            <h2 style="color: #333; border-bottom: none; margin-bottom: 15px;">Need Help?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 15px;">Have questions about the process or need technical support?</p>
+            <p>Reach out to the team on this Slack channel: <strong style="color: #e53e3e;">#change-deliberation-pilot</strong></p>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 40px 0; color: #666;">
+        <div class="container">
+            <p>&copy; 2025 Change.org - Internal Deliberation Process</p>
+        </div>
+    </footer>
+</body>
+</html>
